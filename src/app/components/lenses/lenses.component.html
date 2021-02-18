@@ -1,0 +1,8 @@
+<p>lenses works!</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let lens of lenses" class="col-3">
+            <app-lenses-type [lens]="lens"></app-lenses-type>
+        </div>
+    </div>
+</div>

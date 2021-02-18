@@ -1,0 +1,21 @@
+<p>datails works!</p>
+<section class='row'>
+    <div class='col-3'>
+        <label>מספר עין ימין: <input #nr></label>
+    </div>
+    <div class='col-3'>
+        <label>מספר עין שמאל: <input #nl></label>
+    </div>
+    <div class='col-3'>
+        <label>צילינדר ימין: <input #cr></label>
+    </div>
+    <div class='col-3'>
+        <label>צילינדר שמאל: <input #cl></label>
+    </div>
+    
+    <button (click)="add({
+        rn: nr.value,
+        ln: nl.value,
+        rc: cr.value,
+        lc: cl.value})" [routerLink]='["/finlorder"]' type="button" class="col btn btn-primary">next</button>
+</section>

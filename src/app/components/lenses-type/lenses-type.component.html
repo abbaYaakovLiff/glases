@@ -1,0 +1,16 @@
+<p>lenses-type works!</p>
+<div class="col-3"></div>
+<div class="card " style="width: 16rem;">
+    <div class="card-body">
+        
+        <h5 class="card-title">{{lens.type}}</h5>
+        <p class="card-text">{{lens.price | currency}}</p>
+      
+        
+        <button (click)=add(); [routerLink]='["/details"]' type="button" class="col btn btn-primary">next</button>
+        
+
+       
+
+    </div>
+</div>
